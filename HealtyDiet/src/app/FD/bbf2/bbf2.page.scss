@@ -1,0 +1,35 @@
+
+ion-toolbar{
+    --padding-top:7%; 
+    ion-title{
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+
+img {
+    
+    width: 100%;
+    height: 160px;
+    border-radius: 16px;
+
+}
+
+ion-card {
+    width: 280px;
+   
+    box-shadow: none;
+    border-radius: 12px;
+    position:relative;
+    background-color:rgb(255, 85, 85) ;
+}
+.tx{
+    color: white;
+}
+.tx1{
+    color: white;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

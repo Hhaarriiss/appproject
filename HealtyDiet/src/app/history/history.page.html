@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button routerLink="/tabs/tab3" size="small" color="dark" class="but"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+    <ion-title>History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <div style="display: block"><canvas id="yudhatp-chart"></canvas></div>
+  </div>
+  <ion-card class="c1">
+    <ion-card-header>
+      <ion-card-title>Nutrient</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-item color=":rgb(255, 85, 85)" >
+          <ion-label>Protein: {{p}}gm</ion-label>
+          <ion-text></ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Water: {{w}}ml</ion-label>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Fats: {{f}}gm</ion-label>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Vitamins: {{v}}gm</ion-label>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Fibre: {{fb}}gm</ion-label>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>sugar: {{s}}gm</ion-label>
+        </ion-item>
+    </ion-card-content>
+    </ion-card> 
+</ion-content>

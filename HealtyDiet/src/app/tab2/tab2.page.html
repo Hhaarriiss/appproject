@@ -1,0 +1,333 @@
+
+<ion-header [translucent]="true">
+    <ion-toolbar mode="md" >
+      <ion-title>
+        RECIPES
+      </ion-title>
+      <img class="img1" src="./assets/lg.png">
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-item class="itm1">
+      <ion-label>Select Diet Category</ion-label>
+      <ion-select [(ngModel)]="kari">
+        <ion-select-option value="p1" >Healty</ion-select-option>
+        <ion-select-option value="p2">high blood pressure</ion-select-option>
+        <ion-select-option value="p3">Diabetes</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+
+  
+
+    <ion-content *ngIf="kari == 'p1'">
+      <ion-label class="flb"> Breakfast </ion-label>
+      <ion-slides [options]="option" >
+        <ion-slide>
+          <ion-card>
+            <img src="assets/breakfeast/b1.jpg">
+          <ion-card-content>
+            <ion-card-title class="ft">Pumpkin Muffins</ion-card-title>
+            <ion-button  color="success" expand="block" routerLink="/bf1" >recipes</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card>
+            <img src="assets/breakfeast/b2.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft" >Tomato Omelette</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/bf2">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+    
+        <ion-slide>
+          <ion-card>
+            <img src="assets/breakfeast/b3.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Raspberry Smoothie</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/bf3">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>   
+
+      <ion-label class="flb"> Lunch </ion-label>
+      <ion-slides [options]="option" >
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Lunch/L1.jpg">
+          <ion-card-content>
+            <ion-card-title class="ft">Sweet Pea...</ion-card-title>
+            <ion-button  color="success" expand="block" routerLink="/l1">recipes</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Lunch/L2.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Cauliflower Pizza</ion-card-title>
+              <ion-button  color="success" expand="block" routerLink="/l2">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+    
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Lunch/L3.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Kung Pao Shrimp</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/l3" >recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+
+      <ion-label class="flb"> Dinner </ion-label>
+      <ion-slides [options]="option" >
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Dinner/D1.png">
+          <ion-card-content>
+            <ion-card-title class="ft">Baked Catfish</ion-card-title>
+            <ion-button  color="success" expand="block" routerLink="/d1">recipes</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Dinner/D2.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Stuffed Cabbage</ion-card-title>
+              <ion-button  color="success" expand="block" routerLink="/d2">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+    
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Dinner/D3.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Pan-Fried Tilapia</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/d3" >recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>    
+    </ion-content>
+
+    
+     <!-- chose 2 -->
+    <ion-content *ngIf="kari == 'p2'">
+      <ion-label class="flb"> Breakfast </ion-label>
+      <ion-slides [options]="option" >
+        <ion-slide>
+          <ion-card>
+            <img src="assets/breakfeast/bb1.jpg">
+          <ion-card-content>
+            <ion-card-title class="ft">Savory Spinach</ion-card-title>
+            <ion-button  color="success" expand="block" routerLink="/bbf1" >recipes</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card>
+            <img src="assets/breakfeast/bb2.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft" >Oatmeal Parfait</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/bbf2">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+    
+        <ion-slide>
+          <ion-card>
+            <img src="assets/breakfeast/bb3.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Veggie & Hummus..</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/bff3">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>   
+
+      <ion-label class="flb"> Lunch </ion-label>
+      <ion-slides [options]="option" >
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Lunch/LL1.jpg">
+          <ion-card-content>
+            <ion-card-title class="ft">White Bean..</ion-card-title>
+            <ion-button  color="success" expand="block" routerLink="/ll1">recipes</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Lunch/LL2.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Greens with..</ion-card-title>
+              <ion-button  color="success" expand="block" routerLink="/ll2">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+    
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Lunch/LL3.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Easy Chicken..</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/ll3" >recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+
+      <ion-label class="flb"> Dinner </ion-label>
+      <ion-slides [options]="option" >
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Dinner/DD1.jpg">
+          <ion-card-content>
+            <ion-card-title class="ft">Black Bean Tacos</ion-card-title>
+            <ion-button  color="success" expand="block" routerLink="/dd1">recipes</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Dinner/DD2.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Stuffed Delicata..</ion-card-title>
+              <ion-button  color="success" expand="block" routerLink="/dd2">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+    
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Dinner/DD3.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Roasted Beet Salad</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/dd3" >recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>    
+    </ion-content>
+
+
+
+    <!-- thirddddddddddddddddddddddd -->
+    <ion-content *ngIf="kari == 'p3'">
+      <ion-label class="flb"> Breakfast </ion-label>
+      <ion-slides [options]="option" >
+        <ion-slide>
+          <ion-card>
+            <img src="assets/breakfeast/bb1.jpg">
+          <ion-card-content>
+            <ion-card-title class="ft">Savory Spinach</ion-card-title>
+            <ion-button  color="success" expand="block" routerLink="/bbf1" >recipes</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+        
+       <ion-slide>
+          <ion-card>
+            <img src="assets/breakfeast/b2.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft" >Tomato Omelette</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/bf2">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+    
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Lunch/L3.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Kung Pao Shrimp</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/l3" >recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>   
+
+      <ion-label class="flb"> Lunch </ion-label>
+      <ion-slides [options]="option" >
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Lunch/L1.jpg">
+          <ion-card-content>
+            <ion-card-title class="ft">Sweet Pea...</ion-card-title>
+            <ion-button  color="success" expand="block" routerLink="/l1">recipes</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Lunch/LL2.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Greens with..</ion-card-title>
+              <ion-button  color="success" expand="block" routerLink="/ll2">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+    
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Lunch/LL3.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Easy Chicken..</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/ll3" >recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+
+      <ion-label class="flb"> Dinner </ion-label>
+      <ion-slides [options]="option" >
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Dinner/D1.png">
+          <ion-card-content>
+            <ion-card-title class="ft">Baked Catfish</ion-card-title>
+            <ion-button  color="success" expand="block" routerLink="/d1">recipes</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Dinner/D2.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Stuffed Cabbage</ion-card-title>
+              <ion-button  color="success" expand="block" routerLink="/d2">recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+    
+        <ion-slide>
+          <ion-card>
+            <img src="assets/Dinner/DD3.jpg">
+            <ion-card-content>
+              <ion-card-title class="ft">Roasted Beet Salad</ion-card-title>
+              <ion-button  color="success" expand="block"  routerLink="/dd3" >recipes</ion-button>
+              </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>    
+    </ion-content>
+
+</ion-content>
+

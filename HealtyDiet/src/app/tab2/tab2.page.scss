@@ -1,0 +1,72 @@
+.img1{
+    width: 60px; 
+    height: 60px;
+    position: absolute;
+   left: 0px;
+   top:  -10px;
+}
+ion-title{
+    color: rgb(100, 0, 139);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 30px;
+    top:  10px;
+ 
+   
+}
+.ft{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.itm1{
+    border-radius: 16px;
+    --background: #5a41a0;
+}
+.t{
+    color: rgb(100, 0, 139);
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flb{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   
+    
+
+}
+
+ion-card {
+    width: 100%;
+    height: 300px;
+    box-shadow: none;
+    border-radius: 12px;
+    position:relative;
+    background-color:#fa4646 ;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 160px;
+        transform: scale(1.1, 1.1) rotate(1deg);
+        transition: 600ms all ease-in-out;
+    }
+}
+.swiper-slide-active {
+    transform: scale(1.05, 1.05);
+
+    ion-card {
+        img {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+
+  .brown-option {
+    --color: #5e3e2c;
+    --color-hover: #362419;
+  }

@@ -1,0 +1,163 @@
+<ion-header>
+<ion-toolbar mode="md" >
+  <ion-title>
+    HealthyDiet
+  </ion-title>
+  <img class="img1" src="./assets/lg.png">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item class="itm1">
+    <ion-label>Diet Category</ion-label>
+    <ion-select [(ngModel)]="kari">
+      <ion-select-option value="p1" >Healty</ion-select-option>
+      <ion-select-option value="p2">high blood pressure</ion-select-option>
+      <ion-select-option value="p3">Diabetes</ion-select-option>
+    </ion-select>
+    <ion-button (click)="err1()">okay</ion-button>
+  </ion-item>
+  <ion-card class="c1">
+    <ion-card-header>
+      <ion-card-title>Breakfast</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-title class="t1">Food and Water</ion-card-title>
+      <ion-item color=":rgb(255, 85, 85)" >
+        <ion-label>Food</ion-label>
+        <ion-input placeholder="Enter Input"  [(ngModel)]="fs1"></ion-input>
+        <ion-fab-button  (click)="cal1()"><ion-icon name="add-outline"></ion-icon></ion-fab-button>
+      </ion-item>
+      <ion-item color=":rgb(255, 85, 85)" >
+        <ion-label>Water</ion-label>
+        <ion-input placeholder="Enter Input" [(ngModel)]="ws1"></ion-input>
+        <ion-fab-button (click)="cal2()"><ion-icon name="add-outline"></ion-icon></ion-fab-button>
+      </ion-item>
+
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-card-title class="t1">Nutrient</ion-card-title>
+        <ion-item color=":rgb(255, 85, 85)" >
+          <ion-label>Protein</ion-label>
+          <ion-text>now:({{bp}}gm)  <br>target:({{errp}}gm)</ion-text>
+          <ion-text></ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Water</ion-label>
+          <ion-text>now:({{bw}}ml) <br>target:({{errw}}ml)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Fats</ion-label>
+          <ion-text>now:({{bf}}gm) <br>target:({{errf}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Vitamins</ion-label>
+          <ion-text>>now:({{bv}}gm) <br>target:({{errv}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Fibre</ion-label>
+          <ion-text>now:({{bfb}}gm) <br>target:({{errfb}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>sugar</ion-label>
+          <ion-text>now:({{bs}}gm) <br>target:({{errsg}}gm)</ion-text>
+        </ion-item>
+    </ion-card-content>
+    </ion-card> 
+    
+  <ion-card class="c2">
+    <ion-card-header>
+      <ion-card-title>Lunch</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-title class="t1">Food and Water</ion-card-title>
+      <ion-item color=":rgb(255, 85, 85)" >
+        <ion-label>Food</ion-label>
+        <ion-input placeholder="Enter Input" [(ngModel)]="fs2"></ion-input>
+        <ion-fab-button><ion-icon name="add-outline" (click)="cal3()"></ion-icon></ion-fab-button>
+      </ion-item>
+      <ion-item color=":rgb(255, 85, 85)" >
+        <ion-label>Water</ion-label>
+        <ion-input placeholder="Enter Input"  [(ngModel)]="ws2"></ion-input>
+        <ion-fab-button><ion-icon name="add-outline"(click)="cal4()"></ion-icon></ion-fab-button>
+      </ion-item>
+
+    </ion-card-content>
+    <ion-card-content>
+      <ion-card-title class="t1">Nutrient</ion-card-title>
+        <ion-item color=":rgb(255, 85, 85)" >
+          <ion-label>Protein</ion-label>
+          <ion-text>now:({{bp}}gm)  <br>target:({{errp}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Water</ion-label>
+          <ion-text>now:({{bw}}ml) <br>target:({{errw}}ml)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Fats</ion-label>
+          <ion-text>now:({{bf}}gm) <br>target:({{errf}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Vitamins</ion-label>
+          <ion-text>>now:({{bv}}gm) <br>target:({{errv}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Fibre</ion-label>
+          <ion-text>now:({{bfb}}gm) <br>target:({{errfb}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>sugar</ion-label>
+          <ion-text>now:({{bs}}gm) <br>target:({{errsg}}gm)</ion-text>
+        </ion-item>
+    </ion-card-content>
+    </ion-card>   
+
+    <ion-card class="c3">
+    <ion-card-header>
+      <ion-card-title>Dinner</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-title class="t1">Food and Water</ion-card-title>
+      <ion-item color=":rgb(255, 85, 85)" >
+        <ion-label>Food</ion-label>
+        <ion-input placeholder="Enter Input" [(ngModel)]="fs3"></ion-input>
+        <ion-fab-button><ion-icon name="add-outline"(click)="cal5()"></ion-icon></ion-fab-button>
+      </ion-item>
+      <ion-item color=":rgb(255, 85, 85)" >
+        <ion-label>Water</ion-label>
+        <ion-input placeholder="Enter Input"[(ngModel)]="ws3"></ion-input>
+        <ion-fab-button><ion-icon name="add-outline"(click)="cal6()"></ion-icon></ion-fab-button>
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content>
+      <ion-card-title class="t1">Nutrient</ion-card-title>
+        <ion-item color=":rgb(255, 85, 85)" >
+          <ion-label>Protein</ion-label>
+          <ion-text>now:({{bp}}gm)  <br>target:({{errp}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Water</ion-label>
+          <ion-text>now:({{bw}}ml) <br>target:({{errw}}ml)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Fats</ion-label>
+          <ion-text>now:({{bf}}gm) <br>target:({{errf}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Vitamins</ion-label>
+          <ion-text>>now:({{bv}}gm) <br>target:({{errv}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>Fibre</ion-label>
+          <ion-text>now:({{bfb}}gm) <br>target:({{errfb}}gm)</ion-text>
+        </ion-item>
+        <ion-item color=":rgb(255, 85, 85)">
+          <ion-label>sugar</ion-label>
+          <ion-text>now:({{bs}}gm) <br>target:({{errsg}}gm)</ion-text>
+        </ion-item>
+    </ion-card-content>
+    <ion-button color="success"expand="full" (click)="save()">SAVE ALL</ion-button>
+    </ion-card>   
+    
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar mode="md">
+    <ion-title>
+      Profile
+    </ion-title>
+    <img class="img11" src="./assets/lg.png">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card class="c1">
+
+      <ion-avatar class="avatar">
+        <img class="img1" src="./assets/123.jpg">
+        <!-- <ion-fab-button><ion-icon name="add-outline"></ion-icon></ion-fab-button> -->
+      </ion-avatar>
+   
+    
+    <ion-card-content>
+      <ion-card-title class="ct"> Welcome</ion-card-title>
+      <ion-button  color="success" class="but1"  routerLink="/edit" >Edit profile </ion-button>
+      <ion-button  color="success" class="but2"  routerLink="/login" >Log out</ion-button>
+    </ion-card-content>
+    </ion-card>
+    
+  <ion-card class="c2">
+    <ion-card-header>
+      <ion-card-title >History</ion-card-title>
+    </ion-card-header>
+    <ion-item color=":rgb(255, 85, 85)" *ngFor="let post of posts">
+      <ion-label fixed class='fixedLabel'>{{post.date}}</ion-label>
+      <ion-button color="primary" [routerLink]="['/history', post.id]">more ></ion-button>
+      <ion-button color="danger" (click)="deletePost(post.id)">Delete</ion-button>
+  </ion-item>
+    <ion-card-content>
+    </ion-card-content>
+    </ion-card>
+</ion-content>

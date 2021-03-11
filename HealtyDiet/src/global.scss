@@ -1,0 +1,77 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+ion-alert {
+    //background color
+    .alert-wrapper.sc-ion-alert-md {
+      background-color: #c21597;
+      --background: rgb(241, 241, 241);
+
+    }
+  
+    // Header Text
+    .alert-title.sc-ion-alert-md {
+      font-size: 25px;
+      font-weight: 600;
+      font-family: "AustralisProSwash-Italic";
+      color: var(--ion-text-color, #ffffff);
+    }
+  
+    // checkbox border color
+    [aria-checked="true"].sc-ion-alert-md .alert-radio-icon.sc-ion-alert-md {
+      border-color: #00000080;
+    }
+  
+    // checkbox or radio button color
+    .alert-radio-inner.sc-ion-alert-md {
+      background-color: #04ffd5 !important;
+    }
+  
+    // wrap the text
+    .alert-radio-label.sc-ion-alert-md {
+      white-space: pre-line !important;
+      font-family: "AustralisProSwash-Italic";
+      color: var(--ion-text-color, #000000b3);
+      font-weight: bold;
+    }
+  
+    // Height of text
+    .alert-tappable.sc-ion-alert-md {
+      height: 77px !important;
+    }
+  
+    // Checked text color
+    [aria-checked="true"].sc-ion-alert-md .alert-radio-label.sc-ion-alert-md {
+      color: var(--ion-color-step-850, #1f5bff);
+    }
+  
+    // Button color
+    .alert-button-inner.sc-ion-alert-md {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: larger;
+    }
+  }
